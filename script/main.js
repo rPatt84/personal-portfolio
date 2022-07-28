@@ -8,15 +8,16 @@ projectArticlesH3Array.forEach(cur => {
         const childNodes = event.target.parentNode.children;
         childNodes[1].classList.toggle('collapse');
         
+        //select i element
         const iElement = event.target.children[0];
-        console.log(iElement)
+
         if(iElement.style.transform === '') {
             //rotate project i element upon click
-            iElement.style.transform = 'rotate(0deg)'
+            iElement.style.transform = 'rotate(0deg)';      
         } else {
             //rotate element back to normal
             iElement.style.transform = '';
-            iElement.style.transition = 'transform .75s'
+            iElement.style.transition = 'transform .75s';
         }
     })
 });

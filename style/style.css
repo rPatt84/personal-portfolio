@@ -151,7 +151,13 @@
             align-items:center;
             padding: .55rem;
             height: 15vh;
-            min-height: 100px;
+            min-height: 125px;
+        }
+
+        #header-blurb {
+            color: var(--third-color);
+            margin-left: .833rem;
+            font-size: 1rem;
         }
 
         nav {
@@ -161,12 +167,11 @@
         #nav-ul li {
             display: inline-block;
             margin: 0 1.38rem;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
         
 /* 2. About Section */
         #about-section {
-            height: 100vh;
             min-height: 650px;
             width: 100vw;
             margin: auto;
@@ -178,6 +183,7 @@
 
         #about-styling-div {
             position: relative;
+            margin-top: 3rem;
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
@@ -197,7 +203,7 @@
         #about-text-container {
             flex-basis: 60%;
             position: relative;
-            left: -200px;
+            left: -15%;
             padding: .83rem;
             background-color: rgba(0, 0, 0, .5);
             color: var(--third-color);
@@ -212,6 +218,7 @@
         background-image: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color), var(--primary-color));
         width: 80%;
         margin: auto;
+        margin-top: 50px;
         padding: 2rem 3rem;
         background-color: var(--primary-color);
         position: relative;
@@ -305,7 +312,7 @@
 
         #responsive-styling-container {
             text-align: center;
-            width: 80%;
+            width: 100%;
             margin: auto;
             padding-bottom: 50px;
         }
@@ -478,6 +485,86 @@ footer {
 
 #footer-links a:hover i {
     color: var(--third-color)
+}
+
+@media only screen and (max-width: 1050px){
+/* 1. Global */
+    html {
+        font-size: 16px;
+    }
+
+/* About Section */
+    #about-section {
+        margin: 100px 0;
+    }
+
+    #about-styling-div {
+        flex-direction: column;
+    }
+
+    #about-me-img {
+        width: 350px;
+        height: 350px;
+        top: 0;
+        left: 0;
+    }
+
+    #about-text-container {
+        width: 95%;
+        top: 0;
+        left: 0;
+    }
+
+    /* 2. skill & Design  */
+    #skills-and-design-section {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 865px){
+
+/* 1. skill & Design  */
+
+    /* b. Responsive design section */
+        i[class*="fa-desktop"]{
+            top: 0;
+            left: -50px;
+            z-index: 1;
+        }
+
+        i[class*="fa-tablet-screen-button"]{
+            left: -30px;
+            top: 30px;
+        }
+
+        i[class*="fa-mobile-screen-button"] {
+            left: 170px;
+            top: -101px;
+        }
+
+        i[class*="fa-mobile-screen-button"]:hover::after {
+            position: absolute;
+            top: 135px;
+            left: 18px;
+            content: 'Mobile';
+            font-size: 1rem;
+        }
+
+        i[class*="fa-tablet-screen-button"]:hover::after {
+                position: absolute;
+                top: 165px;
+                left: 40px;
+                content: 'Tablet';
+                font-size: 1rem;
+            }
+
+        i[class*="fa-desktop"]:hover::after {
+                position: absolute;
+                top: 215px;
+                left: 80px;
+                content: 'Desktop';
+                font-size: 1rem;
+        }
 }
 
 
