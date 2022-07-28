@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio | Home</title>
+        <meta name="description" content="Frontend developer, improve the look and functionality of your website">
+        <meta name="keywords" content="web developer, frontend, personal, portfolio, HTML, CSS, Javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/main.js" defer></script>
+        <script src="https://kit.fontawesome.com/a4730e8bc4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!-- Header -->
+        <header>
+            <div id="logo-container">
+                <h1>Logo</h1>
+                <p>Front Developer</p>  
+            </div>
+            
+
+            <nav>
+                <ul id="nav-ul">
+                    <li><a href="#about-section">About me</a></li>
+                    <li><a href="#skills-and-design-section">Skills & Design</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                    <li><a href="contact-me.html">Contact Me</a></li>          
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+<!-- About-me -->
+            <section id="about-section">           
+                <div id="about-styling-div">
+                    <span class="cross edging-span-1"></span>
+                    <span class="cross edging-span-2"></span>        
+                    <span class="cross edging-span-3"></span>        
+                    <span class="cross edging-span-4"></span> 
+                    <span class="cross edging-span-5"></span> 
+                    <span class="cross edging-span-6"></span> 
+                    <span class="cross edging-span-7"></span> 
+                    <span class="cross edging-span-8"></span>     
+                    <img id="about-me-img" src="resources/images/bridge-over-the-river-tyne.jpg" alt="">
+                    <!-- Photo by <a href="https://unsplash.com/@eilisgarvey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eilis Garvey</a> on <a href="https://unsplash.com/s/photos/tyne-bridge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+                        
+                    <div id="about-text-container">
+                        <h2>About Me</h2>
+                        <p>I am Robert Patterson, i was born in Newcastle Upon Tyne and moved to Nottinghamshire when i was young, This ment i had to learn how to adapt, mainly so i could be understood when communicating, although i havent mastered it yet, i am getting there!</p>
+
+                        <p>In my free time i enjoy running, sessions in the gym, reading, walking and gaming. Although not religious myself i volunteer at the local church, helping with clock winding, maintenance when required and occasionally interment of ashes.</p>
+
+                        <p>I enjoy creating user-friendly intuitive designs using HTML, CSS & Javascript for an optimal user experience.</p>
+
+                        <button class="btn"><a href="#projects-section" class="view-projects">View my projects</a></button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills-and-design-section">
+                <span id="skills-design-span-1"></span>
+                <span id="skills-design-span-2"></span>
+                <span id="skills-design-span-3"></span>
+                <span id="skills-design-span-4"></span>
+                <h2 id="h2-skills-and-design">Skills & Design</h2>
+                <div id="skills-and-design-container">
+                    <article id="skills-article">
+                        <h3>Skills</h3>
+                        <div id="skills-container-styling">
+                            <div class="skills-card">
+                                <i class="fa-brands fa-html5"></i>
+                                <p>HTML</p>
+                            </div>
+                            <div class="skills-card">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <p>CSS</p>
+                            </div>
+                            <div class="skills-card">
+                                <i class="fa-brands fa-bootstrap"></i>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="skills-card">
+                                <i class="fa-brands fa-js"></i>
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="responsive-styling-container">
+                        <h3>Responsive Design</h3>
+                        <p>Get the most out of your website, whatever device it is being viewed on</p>
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </article> 
+                </div>
+            </section>
+
+<!-- Projects -->
+            <section id="projects-section">
+                <div>
+                    <h2>Projects</h2>
+                    <p id="projects-section-text-blurb">Bellow are some examples of my work, personal projects and codecademy related projects. Some i created to challenge myself, others i created for fun. Click <span>'view project'</span> in the project description if you wish to open the project.</p>
+                </div>
+
+                <div id="projects-container">
+                    <article class="projects-card">
+                        <h3 class="projects-article-h3" title="click to view more">Green Vesting <i class="fa-solid fa-angle-down"></i></h3>
+                        <figure class="collapse">
+                            <img class="project-img" src="./resources/images/greenvesting.jpg" alt=""> 
+                            <figcaption>
+                                <p>A codecademy project, the goal, to create a responsive website for a fictional company.</p>
+                                <p>Tech stack used</p>
+                                <ul class="projects-ul">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <a href="https://codepen.io/robP84/full/vYWjaNz" class="projects-link" target="_blank">View project</a>
+                           </figcaption>
+                        </figure>                        
+                    </article>
+
+                    <article class="projects-card">
+                        <h3 class="projects-article-h3" title="click to view more">International Space Station Tracker <i class="fa-solid fa-angle-down"></i></h3>
+                        <figure class="collapse">
+                            <img class="project-img" src="./resources/images/iss-tracker.jpg" alt="">
+                            <figcaption>
+                                <p>A project which tracks the position and altitude of the International Space Staion.</p>
+                                <p>Tech stack used</p>
+                                <ul class="projects-ul">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                                <a href="https://codepen.io/robP84/full/poNgKoY" class="projects-link" target="_blank">View project</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="projects-card">
+                        <h3 class="projects-article-h3" title="click to view more">Brothers Of Metal <i class="fa-solid fa-angle-down"></i></h3>
+                        <figure class="collapse">
+                            <img class="project-img" src="./resources/images/borthers-of-metal.jpg" alt="">
+                            <figcaption>
+                                <p>A codecademy project to create a responsive website for a fictitious club using flexbox and other flexible design tools.</p>
+                                <p>Tech stack used</p>
+                                <ul class="projects-ul">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <a href="https://codepen.io/robP84/full/bGYMjdX" class="projects-link" target="_blank">View project</a>
+                            </figcaption>
+                        </figure>             
+                    </article>
+
+                    <article class="projects-card">
+                        <h3 class="projects-article-h3" title="click to view more">Interval Spilt Timer <i class="fa-solid fa-angle-down"></i></h3>
+                        <figure class="collapse">
+                            <img class="project-img" src="./resources/images/interval-split-timer.jpg" alt="">
+                            <figcaption>
+                                <p>An interval split/timer using '.then' statements and recursion.</p>
+                                <p>Tech stack used</p>
+                                <ul class="projects-ul">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                                <a href="https://codepen.io/robP84/full/porPEqm" class="projects-link" target="_blank">View project</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="projects-card">
+                        <h3 class="projects-article-h3" title="click to view more">Budget App <i class="fa-solid fa-angle-down"></i></h3>
+                        <figure class="collapse">
+                            <img class="project-img" src="./resources/images/budget-app.jpg" alt="">
+                            <figcaption>
+                                <p>Budget tracking application.</p>
+                                <p>Tech stack used</p>
+                                <ul class="projects-ul">
+                                    <li>HTML</li>
+                                    <li>SCSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                                <a href="https://codepen.io/robP84/full/qBNJGrP" class="projects-link" target="_blank">View project</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="projects-card">
+                        <h3 class="projects-article-h3" title="click to view more">Random Quote Machine <i class="fa-solid fa-angle-down"></i></h3>
+                        <figure class="collapse">
+                            <img class="project-img" src="./resources/images/random-quote-machine.jpg" alt="">
+                            <figcaption>
+                                <p>Project generates a random quote on each button press, styled using Bootstrap and CSS.</p>
+                                <p>Tech stack used</p>
+                                <ul class="projects-ul">
+                                    <li>HTML</li>
+                                    <li>Bootstrap</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                                <a href="https://codepen.io/robP84/full/LYeaJpy" class="projects-link" target="_blank">View project</a>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </section>
+
+<!-- Footer -->
+            <footer>
+                <p>&copy; Robert Patterson</p>
+                <div id="footer-links">
+                    <a href="https://www.github.com/" target="_blank"><i class="fa-brands fa-github" title="find me on github" ></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin" title="find me on linkedin"></i></a>  
+                </div>
+                <p><a href="#about-section">About Me</a> | <a href="#skills-and-design-section">Skills & Design</a> | <a href="#projects-section">Projects</a> | <a href="contact-me.html">Contact Me</a></p>
+            </footer>
+        </main>
+    </body>
+</html>
